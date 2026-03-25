@@ -1579,3 +1579,29 @@ a.contact-item:hover .contact-value {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Fix contact form overflow */
+.contact-grid {
+    overflow: visible;
+}
+
+.contact-form-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+    .contact-grid {
+        align-items: start;
+    }
+    
+    .contact-form-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+/* Ensure container doesn't overflow */
+.contact.section .container {
+    overflow: visible;
+}
