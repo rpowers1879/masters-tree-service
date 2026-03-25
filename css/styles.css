@@ -1563,3 +1563,19 @@ a.contact-item:hover .contact-value {
 .map-placeholder-old {
     display: none;
 }
+
+/* Contact section fix - ensure form is fully visible */
+.contact.section {
+    padding-bottom: var(--space-xxl);
+}
+
+.contact-form-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure animated elements at bottom of page become visible */
+.contact .animate-fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
